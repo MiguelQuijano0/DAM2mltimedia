@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonPause"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="47dp"
+        android:text="REPRODUCTOR DE AUDIO" />
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="607dp"
+        android:layout_weight="0.3"
+        android:text="Play"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="608dp"
+        android:layout_toEndOf="@+id/buttonPlay"
+        android:layout_weight="0.3"
+        android:text="Pause"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="89dp"
+        android:layout_marginBottom="608dp"
+        android:layout_toEndOf="@+id/buttonPause"
+        android:layout_weight="0.3"
+        android:text="Stop"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <VideoView
+        android:id="@+id/simpleVideoView"
+        android:layout_width="383dp"
+        android:layout_height="163dp"
+        android:layout_above="@+id/buttonvPause"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="37dp" />
+
+    <Button
+        android:id="@+id/buttonvPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="316dp"
+        android:layout_weight="0.3"
+        android:text="Play"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <Button
+        android:id="@+id/buttonvPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="318dp"
+        android:layout_toEndOf="@+id/buttonPlay"
+        android:layout_weight="0.3"
+        android:text="Pause"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <Button
+        android:id="@+id/buttonvStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="89dp"
+        android:layout_marginBottom="318dp"
+        android:layout_toEndOf="@+id/buttonPause"
+        android:layout_weight="0.3"
+        android:text="Stop"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <Button
+        android:id="@+id/btnCamara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="77dp"
+        android:text="Camara" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="155dp"
+        android:layout_height="179dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="22dp"
+        android:layout_toEndOf="@+id/btnCamara" />
+</RelativeLayout>
